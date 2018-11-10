@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="개인정보 수집 및 이용 동의"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="322dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fadingEdge="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.512">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 개인정보 수집 및 이용 목적	항목	보유기간 본인여부 확인, 연령제한서비스 제공, SSO연동	성명, 아이디, 비밀번호, 휴대폰번호, 이메일주소	회원탈퇴후 5일 이내 또는 법령에 따른 보존기간 계약이행 및 약관변경 등의 고지를 위한 연락, 본인의사확인 및 민원  등의 고객불만처리	성명, 아이디, 휴대폰번호, 이메일주소,전화번호, 주소 부정 이용 방지, 비인가 사용방지, 서비스 제공 및 계약의 이행	방문일시, 서비스 이용 기록 및 기기정보 부정거래의 배제 (가입 후 부정거래가 확인된 경우만)	ID, 휴대폰번호, 이메일주소, 전화번호, 생년월일, 부정거래사유, 탈퇴 시 회원 상태값	회원탈퇴 후 6개월 (선택) 위치정보 이용약관 1. 회원의 현 위치를 이용한 쇼핑정보를 제시하는 서비스(위치기반서비스)를 제공하며, 해당 정보의 진실성, 타당성, 사실 부합성 또는 객관성 등에 관하여 일체의 책임 부인. (제5조) 2. 위치정보 이용.제공.사실 확인자료를 자동으로 1년간 기록.보존함. 위치정보 수집 시 제공받는자, 제공일지 및 제공목적을 통보함. (제6조) 3. 회원은 위치정보 제3자 제공에 대한 동의 철회 가능하며, 이 경우 회사는 확인자료를 파기함 (제7조)"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="201dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/agreeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:text="동의 후 가입"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:text="취소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
